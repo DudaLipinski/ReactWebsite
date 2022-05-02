@@ -1,0 +1,36 @@
+.footer-logo {
+  width: 155px;
+  height: auto;
+  transition: 0.5s all;
+}
+
+footer p {
+  margin: 0 5px 0 0;
+  line-height: initial;
+}
+
+footer li {
+  margin: 15px 0;
+}
+
+footer .space {
+  padding: 77px 0 110px 0;
+}
+
+footer .flex div:first-child {
+  flex: none;
+  min-width: 260px;
+}
+
+footer .icon {
+  width: 23px;
+  margin-right: 42px;
+}
+
+footer address {
+  margin-top: 23px;
+}
+
+address {
+  font-style: normal;
+}

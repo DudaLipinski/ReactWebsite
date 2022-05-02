@@ -1,0 +1,488 @@
+:root {
+  --color-green-600: #39423f;
+  --color-green-400: #b0a0ed;
+  --color-orange-200: #f7f4f1;
+  --color-white: #fff;
+
+  --color-red-400: #ab8f96;
+  --color-red-300: #adadad;
+  --color-red-200: #ffd2dd;
+  --color-blue-600: #103092;
+  --color-blue-700: #001554;
+}
+
+/* default properties */
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  overflow-x: hidden;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+p {
+  line-height: 24px;
+}
+
+/* shared classes */
+
+.centralizer-container {
+  display: flex;
+  justify-content: center;
+}
+
+.centered-content {
+  width: 100%;
+  max-width: 855px;
+}
+
+.centered-content-large {
+  width: 100%;
+  max-width: 1210px;
+}
+
+.default-space {
+  padding: 50px 0 0px;
+}
+
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 -40px;
+}
+
+.item-wrap {
+  margin: 35px 21px 15px;
+  width: 258px;
+  word-break: break-word;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.equal-columns > * {
+  flex: 1;
+}
+
+.bg-white {
+  background-color: var(--color-white);
+}
+
+.bg-orange {
+  background-color: var(--color-orange-200);
+}
+
+.bg-green {
+  background-color: var(--color-green-400);
+}
+
+.bg-blue {
+  background-color: var(--color-blue-700);
+}
+
+.font-white {
+  color: var(--color-white);
+}
+
+.font-red {
+  color: var(--color-red-400);
+}
+
+.font-red-2 {
+  color: var(--color-red-300);
+}
+
+.font-green {
+  color: var(--color-green-600);
+}
+
+.oblong-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.7em 2.1em;
+  border-radius: 60px;
+}
+
+.oblong-button-large {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1.8em;
+  padding: 0.7em 3.2em;
+  border-radius: 60px;
+}
+
+.shadow {
+  background: #ffffff;
+  box-shadow: 0px 5px 15px -1px rgba(0, 0, 0, 0.15);
+}
+
+.left-rounded {
+  width: 100%;
+  border-radius: 1.5em 0 0 1.5em;
+}
+
+.font-mini {
+  font-size: 12px;
+}
+
+.font-tiny {
+  font-size: 13px;
+}
+
+.font-small {
+  font-size: 14px;
+}
+
+.font-x-small {
+  font-size: 15px;
+}
+
+.font-smaller {
+  font-size: 16px;
+}
+
+.font-middle {
+  font-size: 20px;
+}
+
+.font-medium {
+  font-size: 22px;
+}
+
+.font-large {
+  font-size: 25px;
+}
+
+.font-larger {
+  font-size: 27px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.semi-bold {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.main-space {
+  padding: 9em 0 4em;
+}
+
+.margin-none {
+  margin: 0;
+}
+
+.margin-small {
+  margin: 10px 0;
+}
+
+.margin-medium {
+  margin: 15px 0;
+}
+
+.margin-large {
+  margin: 20px 0;
+}
+
+.margin-bottom {
+  margin-bottom: 27px;
+}
+
+.icon {
+  font-size: 24px;
+}
+
+.hidden {
+  display: none;
+}
+
+.layer-1 {
+  z-index: 1;
+}
+
+.component-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* shared components */
+
+.img-left {
+  float: left;
+  margin: 0 20px 0 0;
+}
+
+.img-small {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.img-medium {
+  width: 258px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.img-large {
+  min-width: 400px;
+  min-height: 310px;
+  object-fit: cover;
+}
+
+.img-larger {
+  width: 530px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.img-about {
+  margin-right: -340px;
+}
+
+.li-heart {
+  list-style: square inside url(../images/heart.svg);
+}
+
+.orange-heart {
+  position: absolute;
+  width: 433px;
+  height: auto;
+  top: 143px;
+  right: 0;
+}
+
+.read-more a {
+  width: fit-content;
+}
+
+.read-more span {
+  margin-left: 5px;
+}
+
+.list-products .read-more a {
+  flex-direction: row;
+  justify-content: center;
+  width: initial;
+}
+
+.team p {
+  margin: 0 5px 0 0;
+  line-height: initial;
+}
+
+.location-arrow {
+  font-size: 17px;
+  transform: rotate(315deg);
+}
+
+.location-card {
+  padding: 20px 25px;
+  border-radius: 10px;
+}
+
+.location .space {
+  padding: 58px 0 77px 0;
+}
+
+.list-product {
+  display: inline-block;
+  white-space: normal;
+  width: 258px;
+  height: 251px;
+  border-radius: 30px;
+}
+
+.list-product-card {
+  padding: 45px 21px 30px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 176px;
+}
+
+.list-products .space {
+  padding: 56px 0 76px 0;
+}
+
+.short-description {
+  max-height: 75px;
+  overflow: hidden;
+}
+
+.horizontal-team-card {
+  margin: 50px 0 100px;
+}
+
+.horizontal-team-info {
+  padding: 22px;
+  flex-direction: column;
+}
+
+.event-side {
+  margin-bottom: 42px;
+}
+
+/* page product */
+
+.child-one {
+  flex: 3;
+}
+
+.child-two {
+  flex: 1;
+  margin-top: 75px;
+}
+
+.line {
+  margin: 40px 0;
+  border: 1px solid #b4b4b4;
+}
+
+/* banner and work with */
+
+main {
+  padding-top: 94px;
+}
+
+.banner .space {
+  min-height: 394px;
+}
+
+.main-title {
+  position: absolute;
+  width: 417px;
+  height: 140px;
+  top: 217px;
+}
+
+.work-with {
+  min-height: 74px;
+}
+
+/* CSS Products Grid */
+
+.products .space {
+  padding: 56px 0 76px 0;
+}
+
+/* CSS Company uniqueness */
+
+.company-uniqueness {
+  min-height: 725px;
+}
+
+.company-uniqueness .space {
+  padding: 43px 0;
+}
+
+.company-uniqueness h3 {
+  margin: 10px 0 38px;
+}
+
+.company-uniqueness p:first-child {
+  margin: 0 0 25px 0;
+}
+
+/* CSS Event */
+
+.event .space {
+  padding: 80px 0 40px 0;
+}
+
+.event-box {
+  padding: 0px 110px 0px 0;
+}
+
+.event-item {
+  margin-bottom: 3em;
+}
+
+.company-uniqueness .icon {
+  margin-top: -3px;
+}
+
+.text-box {
+  margin-bottom: 40px;
+}
+
+.text-box p {
+  margin: 0 96px 0 16px;
+}
+
+.text-box span {
+  padding-top: 3px;
+}
+
+.calendar {
+  position: absolute;
+  margin-top: 150px;
+  width: 670px;
+  height: 345px;
+}
+
+.heart-white {
+  position: absolute;
+  right: 39px;
+}
+
+.date p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.item-wrap .date p {
+  font-weight: normal;
+}

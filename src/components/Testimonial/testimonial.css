@@ -1,0 +1,79 @@
+.testimonial .space {
+  padding: 40px 0 180px 0;
+}
+
+.testimonial-card {
+  width: 535px;
+  height: 257px;
+  border-radius: 11px;
+  padding: 45px 55px;
+}
+
+.testimonial-card p {
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.slider {
+  position: relative;
+  margin: 0 auto;
+}
+
+.slider-control {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  transform: translateY(-50%);
+  justify-content: space-between;
+}
+
+.slider-control button {
+  background: none;
+}
+
+.cc-left,
+.cc-right {
+  font-size: 59px;
+  cursor: pointer;
+}
+
+.slides {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide.inactive {
+  display: none;
+}
+
+.ani-r {
+  animation-name: right;
+  animation-duration: 4s;
+}
+
+.ani-l {
+  animation-name: left;
+  animation-duration: 4s;
+}
+
+.fade-in {
+  -webkit-animation: fade-in 1.2s ease-out;
+  animation: fade-in 1.2s ease-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
