@@ -8,5 +8,6 @@ For run:
 
 Still missing:
 
-Route development.
-Responsive on all screens.
+- Route development.
+- Responsive on all screens.
+- Update remaining components to styled-components.
